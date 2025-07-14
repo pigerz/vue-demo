@@ -1,4 +1,11 @@
 # Vueフレームワーク応用のAzure Static Web Apps
+> ## **目次**
+> - [はじめに](#はじめに)  
+>   - [Visual Studio Code](#visual-studio-code)
+>   - [Git](#git)
+>   - [Node.js](#nodejs)
+>   - [Vue Cli](#vue-cli)
+
 
 ## **はじめに**
 ### **Visual Studio Code**
@@ -24,14 +31,40 @@ VS Codeエクステンションは後ほど追加説明
     > その上、npmのPowerShellスクリプト実行するための権限を与える必要があります。下記のコマンドを実行する。
     > ```
     > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine```
+    任意のターミナルでnvmのバージョンチェック出来れば、インストールは成功です。  
+    ``` 
+    nvm -v 
+    ```
 - Node.jsをインストール  
     nvmインストール成功のあと、下記のコマンドでNode.jsのLTSバージョンをインストール  
     ```
     nvm install lts
     ```
     > 他のバージョンが必要の場合は nvm install \<version\> コマンド  
+    任意のターミナルでnodeのバージョンチェック出来れば、インストールは成功です。
+    ```
+    node -v
+    ```
+### **Vue Cli**   
+> Node.jsがインストール成功すれば、npmというパッケージマネージャでインストールすることができる  
+> yarnを使うことも可(yarnのインストールが必要)  
+
+下記のコマンドはnpmを使ってvue cliをインストール(-gはグローバル)
+```
+npm install -g @vue/cli
+```
+任意のターミナルでnodeのバージョンチェック出来れば、インストールは成功です。  
+```
+vue --version
+```
+## **Vueを使用するStatic Web Appsの作成** 
+> :warning:**注意！！** このプロジェクトはデモのため、GitHubを使っています。実際のプロジェクトはAzure DevOpsのAzure Reposを使います  :warning:
+### **前提**
+- 既にAzure static web appsの料金プランを加入したこと
+- アカウントがAzure DevOps組織加入したこと  
 
 
+***
 
 ## Project setup
 ```
