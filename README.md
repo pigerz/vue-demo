@@ -5,6 +5,7 @@
 >   - [Git](#git)
 >   - [Node.js](#nodejs)
 >   - [Vue Cli](#vue-cli)
+> - [Vueを使用するStatic Web Appsの作成](#vueを使用するstatic-web-appsの作成)
 
 
 ## **はじめに**
@@ -30,16 +31,17 @@ VS Codeエクステンションは後ほど追加説明
     > WindowsのPowerShellを使っているの場合、管理員権限で起動する必要があります。  
     > その上、npmのPowerShellスクリプト実行するための権限を与える必要があります。下記のコマンドを実行する。
     > ```
-    > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine```
+    > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+    > ```  
     任意のターミナルでnvmのバージョンチェック出来れば、インストールは成功です。  
     ``` 
     nvm -v 
-    ```
+    ```  
 - Node.jsをインストール  
     nvmインストール成功のあと、下記のコマンドでNode.jsのLTSバージョンをインストール  
     ```
     nvm install lts
-    ```
+    ```  
     > 他のバージョンが必要の場合は nvm install \<version\> コマンド  
     任意のターミナルでnodeのバージョンチェック出来れば、インストールは成功です。
     ```
@@ -49,7 +51,7 @@ VS Codeエクステンションは後ほど追加説明
 > Node.jsがインストール成功すれば、npmというパッケージマネージャでインストールすることができる  
 > yarnを使うことも可(yarnのインストールが必要)  
 
-下記のコマンドはnpmを使ってvue cliをインストール(-gはグローバル)
+下記のコマンドはnpmを使ってvue cliをインストール(-gはグローバル)。  
 ```
 npm install -g @vue/cli
 ```
@@ -58,11 +60,26 @@ npm install -g @vue/cli
 vue --version
 ```
 ## **Vueを使用するStatic Web Appsの作成** 
-> :warning:**注意！！** このプロジェクトはデモのため、GitHubを使っています。実際のプロジェクトはAzure DevOpsのAzure Reposを使います  :warning:
+> :warning:**注意！！** このプロジェクトはデモのため、GitHubを使っています。実際のプロジェクトはAzure DevOpsのAzure Reposを使います。:warning:
 ### **前提**
 - 既にAzure static web appsの料金プランを加入したこと
 - アカウントがAzure DevOps組織加入したこと  
 
+### **手順**
+> これはあくまでも一つの作成手法を紹介。プロジェクトに適宜の手法を使いましょう。
+1. ローカルフォルダでVue Cliコマンドを使い、テンプレートプロジェクトを作成  
+```
+vue create <project名>
+```
+下記は十字キーで選択
+![vue create](assets/img/image.png)
+Vue 3を選択
+![vue create](assets/img/image-2.png)
+NPMを選択
+![vue create](assets/img/image-3.png)
+完成まで待つ
+![完成](assets/img/image-4.png)
+完成
 
 ***
 
