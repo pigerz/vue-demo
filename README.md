@@ -109,8 +109,9 @@ NPMを選択
 5. Azure ProtalやVS CodeのAzureエクステンションでサイトを確認。
 
 ## **VS Code使用の開発手順**
+> :warning:**注意！！** このプロジェクトはデモのため、GitHubを使っています。実際のプロジェクトはAzure DevOpsのAzure Reposを使います。  
 
-作成中...
+:construction:作成中...:construction:
 
 ***
 
