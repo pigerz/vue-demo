@@ -5,7 +5,10 @@
 >   - [Git](#git)
 >   - [Node.js](#nodejs)
 >   - [Vue Cli](#vue-cli)
-> - [Vueを使用するStatic Web Appsの作成](#vueを使用するstatic-web-appsの作成)
+> - [Vueを使用するStatic Web Appsの新規作成](#vueを使用するstatic-web-appsの新規作成)
+>   - [前提](#前提)
+>   - [手順](#手順)
+> - [VS Code使用の開発手順](#vs-code使用の開発手順)
 
 
 ## **はじめに**
@@ -59,7 +62,7 @@ npm install -g @vue/cli
 ```
 vue --version
 ```
-## **Vueを使用するStatic Web Appsの作成** 
+## **Vueを使用するStatic Web Appsの新規作成** 
 > :warning:**注意！！** このプロジェクトはデモのため、GitHubを使っています。実際のプロジェクトはAzure DevOpsのAzure Reposを使います。
 ### **前提**
 - 既にAzure static web appsの料金プランを加入したこと
@@ -72,14 +75,42 @@ vue --version
 vue create <project名>
 ```
 下記は十字キーで選択  
-![vue create](assets/img/image.png)
+![vue create](https://res.cloudinary.com/dooe4rljt/image/upload/v1752492301/image_f8uma9.png)
 Vue 3を選択  
-![vue create](assets/img/image-2.png)
+![vue create](https://res.cloudinary.com/dooe4rljt/image/upload/v1752492301/image-2_qrr5x1.png)
 NPMを選択  
-![vue create](assets/img/image-3.png)
+![vue create](https://res.cloudinary.com/dooe4rljt/image/upload/v1752492301/image-3_rhw7mp.png)
 完成まで待つ  
-![完成](assets/img/image-4.png)
+![完成](https://res.cloudinary.com/dooe4rljt/image/upload/v1752492301/image-4_ho9h46.png)
 完成  
+
+2. VS codeでフォルダを開きます。  
+
+3. VS codeのSource ControlのPublish BranchでGitHubにリポジトリを公開。
+    > GitHubのログインが必要
+    > GitのUsernameとEmailが未設定の場合、設定が必要
+    > ```
+    > git config --global user.name "Your Name"
+    > git config --global user.email "your.email@example.com"
+    > ```
+    > 公開レベルはPrivateを選択する  
+    
+    公開完了のあと、GitHubでリポジトリを確認できます。
+4. VS codeでF1を押下後、Command PaletteでCreate Static Web Appsを入力し、[_*Azure Static Web Apps: 静的 Web アプリの作成...*_]を選択。  
+    下記の動画の手順で該当リポジトリをAzure Static Web Appsでデプロイ
+    ![Static Web Appsデプロイ](https://res.cloudinary.com/dooe4rljt/image/upload/v1752492302/swa_ugzq4k.gif)  
+
+| 設定  |  Value |
+| --- | --- |
+| フレームワーク  | [Vue.js] を選択します  |
+| アプリケーション コードの場所	| 「/」と入力します |
+| ビルドの場所	| 「dist」と入力します |
+
+5. Azure ProtalやVS CodeのAzureエクステンションでサイトを確認。
+
+## **VS Code使用の開発手順**
+
+作成中...
 
 ***
 
