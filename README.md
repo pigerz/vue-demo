@@ -60,7 +60,7 @@ npm install -g @vue/cli
 vue --version
 ```
 ## **Vueを使用するStatic Web Appsの作成** 
-> :warning:**注意！！** このプロジェクトはデモのため、GitHubを使っています。実際のプロジェクトはAzure DevOpsのAzure Reposを使います。:warning:
+> :warning:**注意！！** このプロジェクトはデモのため、GitHubを使っています。実際のプロジェクトはAzure DevOpsのAzure Reposを使います。
 ### **前提**
 - 既にAzure static web appsの料金プランを加入したこと
 - アカウントがAzure DevOps組織加入したこと  
@@ -71,15 +71,15 @@ vue --version
 ```
 vue create <project名>
 ```
-下記は十字キーで選択
+下記は十字キーで選択  
 ![vue create](assets/img/image.png)
-Vue 3を選択
+Vue 3を選択  
 ![vue create](assets/img/image-2.png)
-NPMを選択
+NPMを選択  
 ![vue create](assets/img/image-3.png)
-完成まで待つ
+完成まで待つ  
 ![完成](assets/img/image-4.png)
-完成
+完成  
 
 ***
 
